@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Book a bird veterinary appointment and share your bird care needs with Feather & Care." />
+    <title>Book an Appointment | Feather & Care</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="Feather and Care home page">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-wordmark">Feather &amp; Care</span>
+        </a>
+
+        <div class="nav-links" aria-label="Primary navigation links">
+          <a class="nav-link" href="index.html" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="index.html#services" data-i18n="nav.services">Veterinary Services</a>
+          <a class="nav-link" href="shop.html" data-i18n="nav.shop">Bird Shop</a>
+          <a class="nav-link" href="index.html#knowledge" data-i18n="nav.guide">Bird Care Guide</a>
+          <a class="nav-link" href="index.html#about" data-i18n="nav.about">About Us</a>
+          <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="language-toggle" type="button" aria-label="Language switcher" data-i18n-aria="nav.languageToggle">AR</button>
+          <button class="cart-button" type="button" data-open-cart aria-label="Open shopping cart">
+            <span data-i18n="nav.cart">Cart</span>
+            <span class="cart-count">0</span>
+          </button>
+          <a class="cta-button" href="appointment.html" data-i18n="nav.book">Book an Appointment</a>
+          <button class="nav-toggle" type="button" aria-label="Open menu">☰</button>
+        </div>
+      </nav>
+      <div class="mobile-menu" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Veterinary Services</a>
+        <a href="shop.html">Bird Shop</a>
+        <a href="index.html#knowledge">Bird Care Guide</a>
+        <a href="index.html#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="appointment.html">Book an Appointment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="page-banner-inner">
+          <div class="preheading" style="color: rgba(255,255,255,0.72);" data-i18n="appointment.banner.kicker">Book a visit</div>
+          <h1 data-i18n="appointment.banner.title">Appointment Request</h1>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container appointment-layout">
+          <aside class="info-panel" aria-label="Clinic information">
+            <h3 data-i18n="appointment.expect.title">What to expect</h3>
+            <p data-i18n="appointment.expect.text">We make it easy to arrange an appointment for routine checks, nutritional guidance, and wellness concerns.</p>
+            <ul>
+              <li data-i18n="appointment.expect.item1">Helpful, species-aware veterinary support</li>
+              <li data-i18n="appointment.expect.item2">Clear guidance before your visit</li>
+              <li data-i18n="appointment.expect.item3">Care plans tailored to your bird’s needs</li>
+            </ul>
+          </aside>
+
+          <div class="form-panel">
+            <h3 data-i18n="appointment.form.title">Request a booking</h3>
+            <p class="text-small" data-i18n="appointment.form.subtitle">This demonstration form validates user input and shows the intended booking flow without submitting to a live backend.</p>
+            <form id="appointment-form" novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="customerName" data-i18n="appointment.form.customerName">Customer name</label>
+                  <input id="customerName" name="customerName" type="text" autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label for="phone" data-i18n="appointment.form.phone">Phone number</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+                <div class="form-field">
+                  <label for="birdSpecies" data-i18n="appointment.form.birdSpecies">Bird species</label>
+                  <input id="birdSpecies" name="birdSpecies" type="text" />
+                </div>
+                <div class="form-field">
+                  <label for="birdName" data-i18n="appointment.form.birdName">Bird name</label>
+                  <input id="birdName" name="birdName" type="text" />
+                </div>
+                <div class="form-field">
+                  <label for="appointmentType" data-i18n="appointment.form.appointmentType">Appointment type</label>
+                  <select id="appointmentType" name="appointmentType">
+                    <option value="" data-i18n="appointment.form.selectOne">Select one</option>
+                    <option value="General checkup" data-i18n="appointment.form.option1">General checkup</option>
+                    <option value="Health consultation" data-i18n="appointment.form.option2">Health consultation</option>
+                    <option value="Feather and skin care" data-i18n="appointment.form.option3">Feather and skin care</option>
+                    <option value="Nutritional consultation" data-i18n="appointment.form.option4">Nutritional consultation</option>
+                    <option value="Preventive care" data-i18n="appointment.form.option5">Preventive care</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="preferredDate" data-i18n="appointment.form.preferredDate">Preferred date</label>
+                  <input id="preferredDate" name="preferredDate" type="date" />
+                </div>
+                <div class="form-field full">
+                  <label for="preferredTime" data-i18n="appointment.form.preferredTime">Preferred time</label>
+                  <input id="preferredTime" name="preferredTime" type="time" />
+                </div>
+                <div class="form-field full">
+                  <label for="notes" data-i18n="appointment.form.notes">Additional notes</label>
+                  <textarea id="notes" name="notes" rows="5" placeholder="Tell us about your bird’s needs or concerns." data-i18n-placeholder="appointment.form.notesPlaceholder"></textarea>
+                </div>
+              </div>
+              <div style="margin-top: 22px; display:flex; justify-content:flex-end;">
+                <button class="form-button" type="submit" data-i18n="appointment.form.submit">Submit Request</button>
+              </div>
+              <div class="form-message" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark" aria-hidden="true"></span>
+              <span>Feather &amp; Care</span>
+            </div>
+            <p>Premium veterinary care and bird essentials designed for healthier, happier companions.</p>
+          </div>
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="shop.html">Bird Shop</a>
+              <a href="index.html#services">Services</a>
+              <a href="index.html#contact">Contact</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <div class="footer-links">
+              <a href="appointment.html">Appointments</a>
+              <a href="index.html#knowledge">Care Guide</a>
+              <a href="shop.html">Products</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Visit us</h4>
+            <div class="footer-meta">
+              <span>123 Garden Avenue, Cairo</span>
+              <span>hello@featherandcare.com</span>
+              <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Feather &amp; Care</span>
+          <span>Thoughtful care for every wing.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cart-overlay" aria-hidden="true"></div>
+    <aside class="cart-drawer" aria-label="Shopping cart panel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-button" type="button" data-close-cart aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="empty-cart">Your cart is empty. Add a few nourishing essentials for your bird.</div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Subtotal</span>
+          <span class="cart-total-amount">EGP 0</span>
+        </div>
+        <div style="margin-top: 16px;">
+          <button type="button" class="cta-button" style="width:100%;">Checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>

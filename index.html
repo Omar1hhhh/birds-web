@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Feather & Care offers premium bird veterinary care, wellness support, and a refined pet shop for every feathered companion." />
+    <meta property="og:title" content="Feather & Care | Premium Bird Care" />
+    <meta property="og:description" content="Expert veterinary care, premium nutrition, and everything birds need to thrive." />
+    <meta property="og:type" content="website" />
+    <title>Feather & Care | Bird Veterinary Clinic & Pet Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header navbar--light">
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="brand" aria-label="Feather and Care home page">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-wordmark">Feather &amp; Care</span>
+        </a>
+
+        <div class="nav-links" aria-label="Primary navigation links">
+          <a class="nav-link active" href="index.html" data-i18n="nav.home">Home</a>
+          <a class="nav-link" href="#services" data-i18n="nav.services">Veterinary Services</a>
+          <a class="nav-link" href="shop.html" data-i18n="nav.shop">Bird Shop</a>
+          <a class="nav-link" href="#knowledge" data-i18n="nav.guide">Bird Care Guide</a>
+          <a class="nav-link" href="#about" data-i18n="nav.about">About Us</a>
+          <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="language-toggle" type="button" aria-label="Language switcher" data-i18n-aria="nav.languageToggle">AR</button>
+          <button class="cart-button" type="button" data-open-cart aria-label="Open shopping cart">
+            <span data-i18n="nav.cart">Cart</span>
+            <span class="cart-count">0</span>
+          </button>
+          <a class="cta-button" href="appointment.html" data-i18n="nav.book">Book an Appointment</a>
+          <button class="nav-toggle" type="button" aria-label="Open menu">☰</button>
+        </div>
+      </nav>
+      <div class="mobile-menu" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="#services">Veterinary Services</a>
+        <a href="shop.html">Bird Shop</a>
+        <a href="#knowledge">Bird Care Guide</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="appointment.html">Book an Appointment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="home-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="hero-kicker" data-i18n="home.hero.kicker">Natural care for every feather</div>
+            <h1 id="home-title" class="hero-title" data-i18n="home.hero.title">Thoughtful care for every bird.</h1>
+            <p class="hero-subtitle" data-i18n="home.hero.subtitle">Expert veterinary care, thoughtful nutrition, and essentials for healthier, happier companion birds.</p>
+
+            <div class="hero-actions">
+              <a href="#services" class="cta-button" data-i18n="home.hero.ctaPrimary">Explore care</a>
+              <a href="shop.html" class="secondary-button" data-i18n="home.hero.ctaSecondary">Shop essentials</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <img src="https://images.unsplash.com/photo-1520808663317-647b476a81b9?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="A red songbird perched among branches" fetchpriority="high" />
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-board reveal">
+        <div class="container showcase-grid">
+          <div class="showcase-copy">
+            <div class="preheading" data-i18n="home.showcase.preheading">Bird wellness, beautifully simple</div>
+            <h2 class="heading-display" data-i18n="home.showcase.title">Care that feels as calm as home.</h2>
+            <p data-i18n="home.showcase.text">From routine checkups to premium nutrition and enrichment, every detail is designed to support healthier, happier birds and more confident owners.</p>
+            <div class="showcase-pills" aria-label="Highlights">
+              <span data-i18n="home.showcase.pill1">Vet visits</span>
+              <span data-i18n="home.showcase.pill2">Nutrition</span>
+              <span data-i18n="home.showcase.pill3">Wellness plans</span>
+            </div>
+          </div>
+
+          <figure class="showcase-image">
+            <img src="https://images.unsplash.com/photo-1480044965905-02098d419e96?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="A yellow songbird perched among spring blossoms" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="about" class="section page-shell reveal">
+        <div class="container section-grid">
+          <div class="intro-media" aria-label="Bird care photography">
+            <img alt="A colorful parrot perched near a natural light source" src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=1200&q=80" style="height:100%;width:100%;object-fit:cover;" />
+          </div>
+          <div class="intro-copy">
+            <div class="preheading" data-i18n="home.about.kicker">A place for bird lovers</div>
+            <h2 class="heading-display" data-i18n="home.about.title">More Than a Pet Shop. A Home for Bird Lovers.</h2>
+            <p data-i18n="home.about.text">Feather &amp; Care brings together veterinary expertise and premium lifestyle essentials for birds and their people. From wellness checkups and nutritional guidance to premium food and enrichment, we help every companion bird feel secure, supported, and deeply cared for.</p>
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">✦</div>
+                <div>
+                  <strong data-i18n="home.about.feature1.title">Balanced nutrition</strong>
+                  <span data-i18n="home.about.feature1.text">Tailored diets that support plumage, energy, and healthy routines.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">✓</div>
+                <div>
+                  <strong data-i18n="home.about.feature2.title">Thoughtful checkups</strong>
+                  <span data-i18n="home.about.feature2.text">Preventive care plans built around your bird’s habits and needs.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">✧</div>
+                <div>
+                  <strong data-i18n="home.about.feature3.title">Tailored guidance</strong>
+                  <span data-i18n="home.about.feature3.text">Support for daily care, enrichment, and species-specific wellbeing.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">❤</div>
+                <div>
+                  <strong data-i18n="home.about.feature4.title">Care that feels personal</strong>
+                  <span data-i18n="home.about.feature4.text">Every recommendation is shaped around your bird’s personality and lifestyle.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section-small reveal">
+        <div class="container">
+          <div class="preheading" data-i18n="home.services.kicker">Specialist care</div>
+          <h2 class="heading-display" data-i18n="home.services.title">Thoughtful care for every feathered companion.</h2>
+          <div class="services-grid" style="margin-top: 30px;">
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3 data-i18n="home.services.card1.title">Preventive checkups</h3>
+              <p data-i18n="home.services.card1.text">Regular monitoring and proactive health support designed to reduce avoidable issues.</p>
+              <a href="appointment.html" class="card-action" data-i18n="home.services.card1.link">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3 data-i18n="home.services.card2.title">Nutritional guidance</h3>
+              <p data-i18n="home.services.card2.text">Personalized nutrition plans for stronger feathers, better digestion, and a steadier routine.</p>
+              <a href="appointment.html" class="card-action" data-i18n="home.services.card2.link">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3 data-i18n="home.services.card3.title">Emergency Veterinary Support</h3>
+              <p data-i18n="home.services.card3.text">Prompt guidance when a sudden change in behavior or complexion raises concern.</p>
+              <a href="appointment.html" class="card-action" data-i18n="home.services.card3.link">Learn More →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container">
+          <div class="product-section-head">
+            <div>
+              <div class="preheading" data-i18n="home.store.kicker">Bird essentials</div>
+              <h2 class="heading-display" data-i18n="home.store.title">Everything Your Bird Needs.</h2>
+            </div>
+            <a href="shop.html" class="cta-button" data-i18n="home.store.cta">View the Full Shop</a>
+          </div>
+          <div class="products-grid" id="home-product-grid"></div>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container">
+          <div class="preheading" data-i18n="home.gallery.kicker">Meet our birds</div>
+          <h2 class="heading-display" data-i18n="home.gallery.title">A Collection of Feathered Friends.</h2>
+          <div class="gallery-grid" style="margin-top: 30px;">
+            <article class="gallery-card">
+              <div class="gallery-image" style="background-image:url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="gallery-copy">
+                <h3 data-i18n="home.gallery.card1.title">Macaw</h3>
+                <p data-i18n="home.gallery.card1.text">Brilliant color, playful energy, and an unmistakable personality.</p>
+              </div>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-image" style="background-image:url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="gallery-copy">
+                <h3 data-i18n="home.gallery.card2.title">Cockatiel</h3>
+                <p data-i18n="home.gallery.card2.text">Gentle, social, and happiest with a structured routine.</p>
+              </div>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-image" style="background-image:url('https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="gallery-copy">
+                <h3 data-i18n="home.gallery.card3.title">African Grey</h3>
+                <p data-i18n="home.gallery.card3.text">Curious and expressive companions that thrive on stimulation.</p>
+              </div>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-image" style="background-image:url('https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="gallery-copy">
+                <h3 data-i18n="home.gallery.card4.title">Lovebird</h3>
+                <p data-i18n="home.gallery.card4.text">Compact, lively, and affectionate with daily attention.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="knowledge" class="section-small reveal">
+        <div class="container">
+          <div class="preheading" data-i18n="home.knowledge.title">Bird care knowledge</div>
+          <h2 class="heading-display" data-i18n="home.knowledge.heading">Better Knowledge. Healthier Birds.</h2>
+          <div class="articles-grid" style="margin-top: 30px;">
+            <article class="article-card">
+              <div class="article-cover" style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="article-meta" data-i18n="home.knowledge.tab1">Nutrition</div>
+              <h3 data-i18n="home.knowledge.card1.title">What Should Your Parrot Eat?</h3>
+              <p data-i18n="home.knowledge.card1.text">Simple ways to build a diet that supports strength, skin, and feather condition.</p>
+            </article>
+            <article class="article-card">
+              <div class="article-cover" style="background-image:url('https://images.unsplash.com/photo-1494256997604-768d1f608cac?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="article-meta" data-i18n="home.knowledge.tab2">Behavior</div>
+              <h3 data-i18n="home.knowledge.card2.title">Understanding Bird Behavior</h3>
+              <p data-i18n="home.knowledge.card2.text">How to read cues like vocalization, posture, and attention-seeking patterns.</p>
+            </article>
+            <article class="article-card">
+              <div class="article-cover" style="background-image:url('https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="article-meta" data-i18n="home.knowledge.tab3">Wellness</div>
+              <h3 data-i18n="home.knowledge.card3.title">Signs Your Bird Needs Veterinary Attention</h3>
+              <p data-i18n="home.knowledge.card3.text">Watch for subtle behavior changes that may signal stress or illness.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container">
+          <div class="preheading" data-i18n="home.testimonials.title">Testimonials</div>
+          <h2 class="heading-display" data-i18n="home.testimonials.heading">Bird parents trust Feather &amp; Care.</h2>
+          <div class="testimonials-grid" style="margin-top: 30px;">
+            <article class="testimonial">
+              <div class="stars" aria-label="Five star rating">★★★★★</div>
+              <p class="quote" data-i18n="home.testimonials.quote1">“The team explained everything clearly and helped us improve our cockatiel’s diet and daily routine. It felt personal, not rushed.”</p>
+              <div class="person">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong data-i18n="home.testimonials.person1">Bird parent</strong><br />
+                  <span class="text-small" data-i18n="home.testimonials.person1">Bird parent</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="stars" aria-label="Five star rating">★★★★★</div>
+              <p class="quote" data-i18n="home.testimonials.quote2">“We came in for a vaccine check and left with a full care plan that actually fit our bird’s personality and home setup.”</p>
+              <div class="person">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong data-i18n="home.testimonials.person2">Parrot owner</strong><br />
+                  <span class="text-small" data-i18n="home.testimonials.person2">Parrot owner</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="stars" aria-label="Five star rating">★★★★★</div>
+              <p class="quote" data-i18n="home.testimonials.quote3">“The shop shelves are beautifully curated, and the staff guided us toward the right cage and enrichment setup.”</p>
+              <div class="person">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong data-i18n="home.testimonials.person3">Budgie owner</strong><br />
+                  <span class="text-small" data-i18n="home.testimonials.person3">Budgie owner</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <div class="preheading" style="color: rgba(255,255,255,0.8);" data-i18n="home.cta.kicker">Your bird deserves the best</div>
+              <h2 class="heading-display light" data-i18n="home.cta.title">Your Bird Deserves the Best.</h2>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:14px;">
+              <a href="appointment.html" class="cta-button" data-i18n="home.cta.primary">Book a Veterinary Visit</a>
+              <a href="shop.html" class="secondary-button" style="background: rgba(255,255,255,0.08); color:#fff; border-color: rgba(255,255,255,0.18);" data-i18n="home.cta.secondary">Explore the Shop</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark" aria-hidden="true"></span>
+              <span>Feather &amp; Care</span>
+            </div>
+            <p data-i18n="footer.copy">Premium veterinary care and bird essentials designed for healthier, happier companions.</p>
+          </div>
+          <div class="footer-column">
+            <h4 data-i18n="footer.nav.title">Navigation</h4>
+            <div class="footer-links">
+              <a href="index.html" data-i18n="nav.home">Home</a>
+              <a href="#services" data-i18n="nav.services">Veterinary Services</a>
+              <a href="shop.html" data-i18n="nav.shop">Bird Shop</a>
+              <a href="appointment.html" data-i18n="nav.book">Book an Appointment</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4 data-i18n="footer.shop.title">Shop categories</h4>
+            <div class="footer-links">
+              <a href="shop.html">Bird Food</a>
+              <a href="shop.html">Vitamins &amp; Nutrition</a>
+              <a href="shop.html">Cages &amp; Accessories</a>
+              <a href="shop.html">Toys &amp; Enrichment</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4 data-i18n="footer.contact.title">Contact</h4>
+            <div class="footer-meta">
+              <span data-i18n="footer.footerMeta1">123 Garden Avenue, Cairo</span>
+              <span data-i18n="footer.footerMeta2">hello@featherandcare.com</span>
+              <span data-i18n="footer.footerMeta3">+966 555 123 456</span>
+              <span data-i18n="footer.footerMeta4">Mon - Sat: 9:00 AM - 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Feather &amp; Care</span>
+          <span data-i18n="footer.bottom">Made for birds and the people who love them.</span>
+        </div>
+      </div>
+    </footer>ture-icon" aria-hidden="true">✦</div>
+                <div>
+                  <strong>Veterinary guidance</strong>
+                  <span>Thoughtful care for routine wellness and day-to-day concerns.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">✓</div>
+                <div>
+                  <strong>Premium nutrition</strong>
+                  <span>Well-balanced food and wellness products chosen with care.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">♡</div>
+                <div>
+                  <strong>Warm support</strong>
+                  <span>Friendly advice tailored to your bird’s personality and routine.</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" aria-hidden="true">⚑</div>
+                <div>
+                  <strong>Thoughtful essentials</strong>
+                  <span>Smart habitat, grooming, and enrichment supports.</span>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 28px;">
+              <a href="appointment.html" class="cta-button">Book a Veterinary Visit</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section-small reveal">
+        <div class="container">
+          <div class="preheading">Professional care</div>
+          <h2 class="heading-display">Professional Care for Every Feather.</h2>
+          <div class="services-grid" style="margin-top: 28px;">
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3>General Bird Checkups</h3>
+              <p>Routine health assessments to monitor behavior, weight, and overall condition.</p>
+              <a href="appointment.html" class="card-action">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3>Bird Health Consultation</h3>
+              <p>One-on-one advice for stress, diet, behavior, and day-to-day wellness questions.</p>
+              <a href="appointment.html" class="card-action">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3>Feather &amp; Skin Care</h3>
+              <p>Support for feather quality, skin comfort, grooming needs, and visible changes.</p>
+              <a href="appointment.html" class="card-action">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1494256997604-768d1f608cac?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3>Nutritional Consultation</h3>
+              <p>Balanced guidance to match diet to species, activity level, and living environment.</p>
+              <a href="appointment.html" class="card-action">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3>Preventive Care</h3>
+              <p>Regular monitoring and proactive health support designed to reduce avoidable issues.</p>
+              <a href="appointment.html" class="card-action">Learn More →</a>
+            </article>
+            <article class="service-card">
+              <div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=900&q=80')"></div>
+              <h3>Emergency Veterinary Support</h3>
+              <p>Prompt guidance when a sudden change in behavior or complexion raises concern.</p>
+              <a href="appointment.html" class="card-action">Learn More →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container">
+          <div class="product-section-head">
+            <div>
+              <div class="preheading">Bird essentials</div>
+              <h2 class="heading-display">Everything Your Bird Needs.</h2>
+            </div>
+            <a href="shop.html" class="cta-button">View the Full Shop</a>
+          </div>
+          <div class="products-grid" id="home-product-grid"></div>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container">
+          <div class="preheading">Meet our birds</div>
+          <h2 class="heading-display">A Collection of Feathered Friends.</h2>
+          <div class="gallery-grid" style="margin-top: 30px;">
+            <article class="gallery-card">
+              <div class="gallery-image" style="background-image:url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="gallery-copy">
+                <h3>Macaw</h3>
+                <p>Brilliant color, playful energy, and an unmistakable personality.</p>
+              </div>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-image" style="background-image:url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="gallery-copy">
+                <h3>Cockatiel</h3>
+                <p>Gentle, social, and happiest with a structured routine.</p>
+              </div>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-image" style="background-image:url('https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="gallery-copy">
+                <h3>African Grey</h3>
+                <p>Curious and expressive companions that thrive on stimulation.</p>
+              </div>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-image" style="background-image:url('https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="gallery-copy">
+                <h3>Lovebird</h3>
+                <p>Compact, lively, and affectionate with daily attention.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="knowledge" class="section-small reveal">
+        <div class="container">
+          <div class="preheading">Bird care knowledge</div>
+          <h2 class="heading-display">Better Knowledge. Healthier Birds.</h2>
+          <div class="articles-grid" style="margin-top: 30px;">
+            <article class="article-card">
+              <div class="article-cover" style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="article-meta">Nutrition</div>
+              <h3>What Should Your Parrot Eat?</h3>
+              <p>Simple ways to build a diet that supports strength, skin, and feather condition.</p>
+            </article>
+            <article class="article-card">
+              <div class="article-cover" style="background-image:url('https://images.unsplash.com/photo-1494256997604-768d1f608cac?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="article-meta">Behavior</div>
+              <h3>Understanding Bird Behavior</h3>
+              <p>How to read cues like vocalization, posture, and attention-seeking patterns.</p>
+            </article>
+            <article class="article-card">
+              <div class="article-cover" style="background-image:url('https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=900&q=80');"></div>
+              <div class="article-meta">Wellness</div>
+              <h3>Signs Your Bird Needs Veterinary Attention</h3>
+              <p>Watch for subtle behavior changes that may signal stress or illness.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container">
+          <div class="preheading">Testimonials</div>
+          <h2 class="heading-display">Bird parents trust Feather &amp; Care.</h2>
+          <div class="testimonials-grid" style="margin-top: 30px;">
+            <article class="testimonial">
+              <div class="stars" aria-label="Five star rating">★★★★★</div>
+              <p class="quote">“The team explained everything clearly and helped us improve our cockatiel’s diet and daily routine. It felt personal, not rushed.”</p>
+              <div class="person">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong>Amina H.</strong><br />
+                  <span class="text-small">Bird parent</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="stars" aria-label="Five star rating">★★★★★</div>
+              <p class="quote">“We came in for a vaccine check and left with a full care plan that actually fit our bird’s personality and home setup.”</p>
+              <div class="person">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong>Omar F.</strong><br />
+                  <span class="text-small">Parrot owner</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="stars" aria-label="Five star rating">★★★★★</div>
+              <p class="quote">“The shop shelves are beautifully curated, and the staff guided us toward the right cage and enrichment setup.”</p>
+              <div class="person">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong>Nour S.</strong><br />
+                  <span class="text-small">Budgie owner</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-small reveal">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <div class="preheading" style="color: rgba(255,255,255,0.8);">Your bird deserves the best</div>
+              <h2 class="heading-display light">Your Bird Deserves the Best.</h2>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:14px;">
+              <a href="appointment.html" class="cta-button">Book a Veterinary Visit</a>
+              <a href="shop.html" class="secondary-button" style="background: rgba(255,255,255,0.08); color:#fff; border-color: rgba(255,255,255,0.18);">Explore the Shop</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark" aria-hidden="true"></span>
+              <span>Feather &amp; Care</span>
+            </div>
+            <p>Premium veterinary care and bird essentials designed for healthier, happier companions.</p>
+          </div>
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="#services">Veterinary Services</a>
+              <a href="shop.html">Bird Shop</a>
+              <a href="#knowledge">Bird Care Guide</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Shop categories</h4>
+            <div class="footer-links">
+              <a href="shop.html">Bird Food</a>
+              <a href="shop.html">Vitamins &amp; Nutrition</a>
+              <a href="shop.html">Cages &amp; Accessories</a>
+              <a href="shop.html">Toys &amp; Enrichment</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <div class="footer-meta">
+              <span>123 Garden Avenue, Cairo</span>
+              <span>hello@featherandcare.com</span>
+              <span>+966 555 123 456</span>
+              <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+            </div>
+            <form id="newsletter-form" class="newsletter" aria-label="Newsletter signup">
+              <input type="email" placeholder="Email" aria-label="Email address" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Feather &amp; Care</span>
+          <span>Made for birds and the people who love them.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cart-overlay" aria-hidden="true"></div>
+    <aside class="cart-drawer" aria-label="Shopping cart panel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-button" type="button" data-close-cart style="position:static;" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="empty-cart">Your cart is empty. Add a few nourishing essentials for your bird.</div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Subtotal</span>
+          <span class="cart-total-amount">EGP 0</span>
+        </div>
+        <div style="margin-top: 16px;">
+          <button type="button" class="cta-button" style="width:100%;">Checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="product-modal" aria-modal="true" role="dialog"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
